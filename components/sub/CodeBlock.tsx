@@ -20,7 +20,7 @@ interface CodeBlockProps {
 const pythonCode = `# Using Token authentication
 import requests
 # Your API token from the platform dashboard or API settings
-token = "tk_095fa33201c94b108aee"
+token = "..."
 # Use streaming response
 response = requests.post(
     "https://deepcore.top/api/open/agents/{"agentId}/dialogue",
