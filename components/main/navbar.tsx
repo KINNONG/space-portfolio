@@ -1,12 +1,14 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { LINKS, NAV_LINKS } from "@/constants";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
@@ -64,23 +66,58 @@ export const Navbar = () => {
           </div>
         </div> */}
 
-        <nav className="hidden md:flex items-center space-x-10">
-          <Link href="/workspace" className="text-sm text-gray-300 hover:text-white transition-colors">
+        <nav className="hidden md:flex items-center space-x-14">
+          <Link
+            href="/workspace"
+            className={`text-sm hover:text-white transition-colors relative ${
+              pathname === "/workspace"
+                ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
+                : "text-gray-300"
+            }`}
+          >
             工作台
           </Link>
-          <Link href="/store" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="/store"
+            className={`text-sm hover:text-white transition-colors relative ${
+              pathname === "/store"
+                ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
+                : "text-gray-300"
+            }`}
+          >
             代理商店
           </Link>
-          <Link href="/mcp-store" className="relative text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="/mcp-store"
+            className={`text-sm hover:text-white transition-colors relative ${
+              pathname === "/mcp-store"
+                ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
+                : "text-gray-300"
+            }`}
+          >
             MCP 商店
-            <span className="absolute -top-1 -right-8 bg-primary text-xs rounded px-1 text-primary-foreground">
+            <span className="absolute -top-0 -right-10  text-xs font-semibold rounded-2xl px-1.5 py-0.5 text-blue-500 bg-[#030014]">
               new
             </span>
           </Link>
-          <Link href="/a2a" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="/a2a"
+            className={`text-sm hover:text-white transition-colors relative ${
+              pathname === "/a2a"
+                ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
+                : "text-gray-300"
+            }`}
+          >
             A2A
           </Link>
-          <Link href="/tools" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="/tools"
+            className={`text-sm hover:text-white transition-colors relative ${
+              pathname === "/tools"
+                ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
+                : "text-gray-300"
+            }`}
+          >
             工具
           </Link>
           <Link
@@ -109,7 +146,9 @@ export const Navbar = () => {
         </div> */}
 
         <div>
-          <Button className="button-primary text-white font-medium">登录</Button>
+          <Button className="bg-gray-900 border border-blue-800 hover:bg-gray-800 hover:border-blue-600 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] text-white font-medium transition-all duration-300">
+            登录
+          </Button>
         </div>
 
         {/* Hamburger Menu */}

@@ -1,99 +1,116 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
+// import Image from "next/image"; // 不再需要 Image
+import {
+  BarChart,
+  Bitcoin,
+  Code,
+  Edit,
+  FlaskConical,
+  GraduationCap,
+  Headphones,
+  Landmark, // 引入 Lucide 图标
+  LayoutGrid,
+  Megaphone,
+  Music,
+  Network,
+  Paintbrush,
+  Twitter,
+  Video,
+} from "lucide-react";
 
-// 定义类别数据
+// 定义类别数据，使用 Lucide 图标组件
 const categories = [
   {
     id: 1,
     title: "所有代理",
     description: "浏览所有AI代理",
-    iconUrl: "https://ext.same-assets.com/3645949495/1743763944.svg",
+    icon: LayoutGrid, // 使用 Lucide 图标
   },
   {
     id: 2,
     title: "程序员",
     description: "专业编码人员和系统架构师",
-    iconUrl: "https://ext.same-assets.com/3645949495/1354271685.svg",
+    icon: Code,
   },
   {
     id: 3,
     title: "研究员",
     description: "AI和科学研究专家",
-    iconUrl: "https://ext.same-assets.com/3645949495/395157150.svg",
+    icon: FlaskConical,
   },
   {
     id: 4,
     title: "分析师",
     description: "数据和市场分析专家",
-    iconUrl: "https://ext.same-assets.com/3645949495/2771603144.svg",
+    icon: BarChart,
   },
   {
     id: 5,
     title: "网络",
     description: "网络和基础设施专家",
-    iconUrl: "https://ext.same-assets.com/3645949495/658199468.svg",
+    icon: Network,
   },
   {
     id: 6,
     title: "加密货币新闻",
     description: "新闻聚合，实时信息更新",
-    iconUrl: "https://ext.same-assets.com/3645949495/3410870790.svg",
+    icon: Bitcoin,
   },
   {
     id: 7,
     title: "Twitter",
     description: "社区管理，增强用户互动",
-    iconUrl: "https://ext.same-assets.com/3645949495/875554847.svg",
+    icon: Twitter,
   },
   {
     id: 8,
     title: "图形设计",
     description: "图形生成，创建视觉内容",
-    iconUrl: "https://ext.same-assets.com/3645949495/1195993520.svg",
+    icon: Paintbrush,
   },
   {
     id: 9,
     title: "视频",
     description: "视频编辑，提升创作效率",
-    iconUrl: "https://ext.same-assets.com/3645949495/3959561553.svg",
+    icon: Video,
   },
   {
     id: 10,
     title: "市场营销",
     description: "推广和营销策略",
-    iconUrl: "https://www.svgrepo.com/download/533194/megaphone-alt.svg", // 从 svgrepo.com 获取
+    icon: Megaphone,
   },
   {
     id: 11,
     title: "客户支持",
     description: "用户服务和问题解决",
-    iconUrl: "https://www.svgrepo.com/download/192522/customer-service-support.svg", // 从 svgrepo.com 获取
+    icon: Headphones,
   },
   {
     id: 12,
     title: "教育",
     description: "知识传授和在线学习",
-    iconUrl: "https://www.svgrepo.com/download/102571/education.svg", // 从 svgrepo.com 获取
+    icon: GraduationCap,
   },
   {
     id: 13,
     title: "金融",
     description: "财务分析和投资咨询",
-    iconUrl: "https://www.svgrepo.com/download/175767/finance.svg", // 从 svgrepo.com 获取
+    icon: Landmark,
   },
   {
     id: 14,
     title: "写作",
     description: "内容创作和文案撰写",
-    iconUrl: "https://www.svgrepo.com/download/18788/writing.svg", // 从 svgrepo.com 获取
+    icon: Edit,
   },
   {
     id: 15,
     title: "音乐",
     description: "音乐创作和音频处理",
-    iconUrl: "https://www.svgrepo.com/download/2225/music.svg", // 从 svgrepo.com 获取
+    icon: Music,
   },
 ];
 
@@ -144,13 +161,7 @@ const LogosSection = () => {
                   <div className="flex flex-col flex-grow">
                     <div className="mb-4">
                       <div className="w-10 h-5 rounded-full flex items-center justify-center px-2 transform transition-transform duration-300 group-hover:scale-110">
-                        <Image
-                          src={category.iconUrl}
-                          alt={category.title}
-                          width={40}
-                          height={40}
-                          className="w-full h-full object-contain filter invert brightness-0 group-hover:brightness-100 transition-all duration-300"
-                        />
+                        <category.icon className="w-6 h-6 text-white group-hover:text-purple-300 transition-colors duration-300" />
                       </div>
                     </div>
                     <div className="flex-grow">
@@ -203,13 +214,7 @@ const LogosSection = () => {
                   <div className="flex flex-col flex-grow">
                     <div className="mb-4">
                       <div className="w-10 h-10 rounded-full flex items-center justify-center p-2 transform transition-transform duration-300 group-hover:scale-110">
-                        <Image
-                          src={category.iconUrl}
-                          alt={category.title}
-                          width={40}
-                          height={40}
-                          className="w-full h-full object-contain filter invert brightness-0 group-hover:brightness-100 transition-all duration-300"
-                        />
+                        <category.icon className="w-6 h-6 text-white group-hover:text-purple-300 transition-colors duration-300" />
                       </div>
                     </div>
                     <div className="flex-grow">
