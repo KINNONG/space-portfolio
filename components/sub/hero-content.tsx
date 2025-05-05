@@ -11,7 +11,7 @@ export const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-20 w-[1526px] z-[20] mx-auto"
+      className="flex flex-col md:flex-row items-center justify-center px-4 md:px-20 mt-60 md:mt-20 w-full max-w-[1526px] z-[20] mx-auto"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
         <motion.div
@@ -30,10 +30,10 @@ export const HeroContent = () => {
           className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[650px] w-auto h-auto"
         >
           <div>
-            <h1 className="text-transparent text-5xl font-bold  md:text-6xl lg:text-7xl bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <h1 className="text-transparent text-3xl md:text-5xl font-bold lg:text-7xl bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
               最佳
             </h1>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Web3 AI 代理平台
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -43,7 +43,10 @@ export const HeroContent = () => {
           </div>
         </motion.div>
 
-        <motion.p variants={slideInFromLeft(0.8)} className="text-lg text-gray-400 my-5 max-w-[600px]">
+        <motion.p
+          variants={slideInFromLeft(0.8)}
+          className="text-base md:text-lg text-gray-400 my-3 md:my-5 max-w-[600px]"
+        >
           {/* I&apos;m a Full Stack Software Engineer with experience in Website, Mobile, and Software development. Check
           out my projects and skills. */}
           重塑 Web3 AI 代理基础设施，构建可组合的 AI 代理新时代。
@@ -58,7 +61,10 @@ export const HeroContent = () => {
         </motion.a>
       </div>
 
-      <motion.div variants={slideInFromRight(0.8)} className="w-full h-full flex justify-center items-center">
+      <motion.div
+        variants={slideInFromRight(0.8)}
+        className="w-full h-full flex justify-center items-center mt-8 md:mt-0"
+      >
         {/* <Image src="/hero-bg.svg" alt="work icons" height={650} width={650} draggable={false} className="select-none" /> */}
         <CodeBlock />
       </motion.div>

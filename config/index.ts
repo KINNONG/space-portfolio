@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const siteConfig: Metadata = {
-  title: "程序员小白龙 | Space Portfolio",
-  description: "Welcome to my full stack Next.js 14 space portfolio.",
+  title: "Athenix",
+  description: "Web3 AI 代理平台",
   keywords: [
     "reactjs",
     "nextjs",
@@ -35,7 +35,7 @@ export const siteConfig: Metadata = {
     "css",
   ] as Array<string>,
   authors: {
-    name: "程序员小白龙",
-    url: "https://github.com/kinnong",
+    name: "Athenix",
+    url: "https://github.com/0xdevpro/Athenix",
   },
 } as const;

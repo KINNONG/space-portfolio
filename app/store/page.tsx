@@ -7,7 +7,7 @@ const featuredAgents = [
   {
     id: "agent-1",
     title: "加密分析师 Pro",
-    creator: "DeepCore 团队",
+    creator: "Athenix 团队",
     rating: 4.9,
     reviews: 127,
     price: "免费",
@@ -87,7 +87,7 @@ export default function StorePage() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">市场</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              发现、部署和定制由 DeepCore 社区创建的强大 AI 代理。从分析到交易，为您的 Web3.0 需求找到完美的 AI 助手。
+              发现、部署和定制由 Athenix 社区创建的强大 AI 代理。从分析到交易，为您的 Web3.0 需求找到完美的 AI 助手。
             </p>
             <div className="relative max-w-xl mx-auto">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">

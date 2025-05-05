@@ -6,7 +6,7 @@ const GlobalFooter = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
-            <p className="text-gray-400 mb-2">© 2025 DeepCore. All rights reserved.</p>
+            <p className="text-gray-400 mb-2">© 2025 Athenix. All rights reserved.</p>
           </div>
 
           <div className="flex space-x-6">
@@ -17,7 +17,7 @@ const GlobalFooter = () => {
               隐私政策
             </Link>
             <Link
-              href="https://github.com/0xdevpro/deepcore"
+              href="https://github.com/0xdevpro/Athenix"
               target="_blank"
               className="text-gray-400 hover:text-primary transition-colors"
             >
@@ -37,7 +37,7 @@ const GlobalFooter = () => {
               </svg>
             </Link>
             <Link
-              href="https://x.com/DeepCore_io"
+              href="https://x.com/Athenix_io"
               target="_blank"
               className="text-gray-400 hover:text-primary transition-colors"
             >
@@ -57,7 +57,7 @@ const GlobalFooter = () => {
               </svg>
             </Link>
             <Link
-              href="https://t.me/DeepCoreAI_io"
+              href="https://t.me/AthenixAI_io"
               target="_blank"
               className="text-gray-400 hover:text-primary transition-colors"
             >

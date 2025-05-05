@@ -23,7 +23,7 @@ import requests
 token = "..."
 # Use streaming response
 response = requests.post(
-    "https://deepcore.top/api/open/agents/{"agentId}/dialogue",
+    "https://Athenix.top/api/open/agents/{"agentId}/dialogue",
     headers={
         "X-API-Token": token
     },
@@ -143,7 +143,7 @@ const curlCode = `# Using token authentication
 # Get your API token from the platform dashboard or API settings
 # Use token to call API (streaming response)
 curl -X POST \\
-  "https://deepcore.top/api/open/agents/{"agentId}/dialogue" \\
+  "https://Athenix.top/api/open/agents/{"agentId}/dialogue" \\
   -H "X-API-Token: tk_095fa33201c94b108aee" \\
   -H "Content-Type: application/json" \\
   -d '{
@@ -167,28 +167,28 @@ export default function CodeBlock({
   }, [activeTab]);
 
   return (
-    <div className="my-12 mt-40 code-block z-20 mx-auto relative w-[680px] max-w-4xl">
-      <div className="backdrop-blur-lg  rounded-xl  overflow-hidden shadow-2xl border border-gray-800/50">
+    <div className="my-6 md:my-12 mt-10 md:mt-40 code-block z-20 mx-auto relative w-full md:w-[680px] max-w-4xl">
+      <div className="backdrop-blur-lg rounded-xl overflow-hidden shadow-2xl border border-gray-800/50">
         {/* macOS window controls bar */}
-        <div className="flex items-center  px-4 py-3  border-b border-gray-700/50">
+        <div className="flex items-center px-2 md:px-4 py-2 md:py-3 border-b border-gray-700/50">
           <div className="flex space-x-2">
-            <div className="w-3 h-3 rounded-full bg-[#FF5F56] flex items-center justify-center">
+            <div className="w-2 md:w-3 h-2 md:h-3 rounded-full bg-[#FF5F56] flex items-center justify-center">
               <span className="opacity-0 group-hover:opacity-100 text-[10px]">×</span>
             </div>
-            <div className="w-3 h-3 rounded-full bg-[#FFBD2E] flex items-center justify-center">
+            <div className="w-2 md:w-3 h-2 md:h-3 rounded-full bg-[#FFBD2E] flex items-center justify-center">
               <span className="opacity-0 group-hover:opacity-100 text-[10px]">−</span>
             </div>
-            <div className="w-3 h-3 rounded-full bg-[#27C93F] flex items-center justify-center">
+            <div className="w-2 md:w-3 h-2 md:h-3 rounded-full bg-[#27C93F] flex items-center justify-center">
               <span className="opacity-0 group-hover:opacity-100 text-[10px]">+</span>
             </div>
           </div>
-          <div className="ml-4 text-sm text-gray-400text-center">{title}</div>
+          <div className="ml-4 text-xs md:text-sm text-gray-400 text-center">{title}</div>
         </div>
 
         {/* Language tabs */}
-        <div className="flex ">
+        <div className="flex">
           <button
-            className={`px-6 py-2 text-sm ${
+            className={`px-2 md:px-6 py-2 text-xs md:text-sm ${
               activeTab === "python" ? "text-[#9ECE6A] border-b-2 border-[#9ECE6A]" : "text-gray-400"
             } transition-colors duration-200`}
             onClick={() => setActiveTab("python")}
@@ -196,7 +196,7 @@ export default function CodeBlock({
             Python
           </button>
           <button
-            className={`px-6 py-2 text-sm ${
+            className={`px-2 md:px-6 py-2 text-xs md:text-sm ${
               activeTab === "golang" ? "text-[#9ECE6A] border-b-2 border-[#9ECE6A]" : "text-gray-400"
             } transition-colors duration-200`}
             onClick={() => setActiveTab("golang")}
@@ -204,7 +204,7 @@ export default function CodeBlock({
             Golang
           </button>
           <button
-            className={`px-6 py-2 text-sm ${
+            className={`px-2 md:px-6 py-2 text-xs md:text-sm ${
               activeTab === "nodejs" ? "text-[#9ECE6A] border-b-2 border-[#9ECE6A]" : "text-gray-400"
             } transition-colors duration-200`}
             onClick={() => setActiveTab("nodejs")}
@@ -222,7 +222,7 @@ export default function CodeBlock({
         </div>
 
         {/* Code content */}
-        <div className="p-6 overflow-auto max-h-[450px] font-mono text-sm scrollbar-hide [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
+        <div className="p-3 md:p-6 overflow-auto max-h-[250px] md:max-h-[450px] font-mono text-xs md:text-sm scrollbar-hide [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:'none']">
           {activeTab === "python" && (
             <pre className="language-python" style={{ background: "transparent" }}>
               <code>{pythonCodeProp || pythonCode}</code>

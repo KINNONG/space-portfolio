@@ -1,21 +1,37 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 
-import { LINKS, NAV_LINKS } from "@/constants";
+import { useAlert } from "@/components/AlertProvider";
+import { WalletConnectButton } from "@/components/WalletConnectButton";
+import { useWallet } from "@solana/wallet-adapter-react";
+
+// 定义受保护路由
+const PROTECTED_ROUTES = ["/workspace", "/store", "/mcp-store", "/a2a", "/tools"];
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
+  const { connected } = useWallet();
+  const { showAlert } = useAlert();
+
+  // 处理导航点击
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, path: string) => {
+    // 如果是受保护路由且钱包未连接
+    if (PROTECTED_ROUTES.includes(path) && !connected) {
+      e.preventDefault(); // 阻止默认行为
+      showAlert("请先连接钱包，再访问此页面", "info", 3000);
+    }
+  };
 
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
       {/* Navbar Container */}
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Logo + Name */}
-        <Link href="#about-me" className="flex items-center">
+        <div className="flex items-center">
           {/* <Image src="/logo.png" alt="Logo" width={70} height={70} draggable={false} className="cursor-pointer" /> */}
           <Link href="/" className="flex items-center">
             <div className="w-8 h-8 mr-2">
@@ -36,10 +52,10 @@ export const Navbar = () => {
                 />
               </svg>
             </div>
-            <span className="text-xl font-bold text-white">DeepCore</span>
+            <span className="text-xl font-bold text-white">Athenix</span>
           </Link>
           {/* <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">Deep Core</div> */}
-        </Link>
+        </div>
 
         {/* Web Navbar */}
         {/* <div className="hidden md:flex w-[500px] h-full flex-row items-center justify-between md:mr-20">
@@ -74,6 +90,7 @@ export const Navbar = () => {
                 ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
                 : "text-gray-300"
             }`}
+            onClick={(e) => handleNavClick(e, "/workspace")}
           >
             工作台
           </Link>
@@ -84,6 +101,7 @@ export const Navbar = () => {
                 ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
                 : "text-gray-300"
             }`}
+            onClick={(e) => handleNavClick(e, "/store")}
           >
             代理商店
           </Link>
@@ -94,6 +112,7 @@ export const Navbar = () => {
                 ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
                 : "text-gray-300"
             }`}
+            onClick={(e) => handleNavClick(e, "/mcp-store")}
           >
             MCP 商店
             <span className="absolute -top-0 -right-10  text-xs font-semibold rounded-2xl px-1.5 py-0.5 text-blue-500 bg-[#030014]">
@@ -107,6 +126,7 @@ export const Navbar = () => {
                 ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
                 : "text-gray-300"
             }`}
+            onClick={(e) => handleNavClick(e, "/a2a")}
           >
             A2A
           </Link>
@@ -117,18 +137,19 @@ export const Navbar = () => {
                 ? "text-white font-medium after:absolute after:bottom-[-8px] after:left-0 after:w-full after:h-[2px] after:bg-blue-500"
                 : "text-gray-300"
             }`}
+            onClick={(e) => handleNavClick(e, "/tools")}
           >
             工具
           </Link>
           <Link
-            href="https://github.com/0xdevpro/deepcore"
+            href="https://github.com/0xdevpro/Athenix"
             target="_blank"
             className="text-sm text-gray-300 hover:text-white transition-colors"
           >
             GitHub
           </Link>
           <Link
-            href="https://docs.deepcore.top/"
+            href="https://docs.Athenix.top/"
             target="_blank"
             className="text-sm text-gray-300 hover:text-white transition-colors"
           >
@@ -145,10 +166,8 @@ export const Navbar = () => {
           ))}
         </div> */}
 
-        <div>
-          <Button className="bg-gray-900 border border-blue-800 hover:bg-gray-800 hover:border-blue-600 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] text-white font-medium transition-all duration-300">
-            登录
-          </Button>
+        <div className="hidden md:flex">
+          <WalletConnectButton />
         </div>
 
         {/* Hamburger Menu */}
@@ -165,35 +184,91 @@ export const Navbar = () => {
         <div className="absolute top-[65px] left-0 w-full bg-[#030014] p-5 flex flex-col items-center text-gray-300 md:hidden">
           {/* Links */}
           <div className="flex flex-col items-center gap-4">
-            {NAV_LINKS.map((link) => (
-              <Link
-                key={link.title}
-                href={link.link}
-                className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.title}
-              </Link>
-            ))}
             <Link
-              href={LINKS.sourceCode}
+              href="/workspace"
+              className={`cursor-pointer hover:text-[rgb(112,66,248)] transition text-center ${
+                pathname === "/workspace" ? "text-white font-medium" : ""
+              }`}
+              onClick={(e) => {
+                handleNavClick(e, "/workspace");
+                setIsMobileMenuOpen(false);
+              }}
+            >
+              工作台
+            </Link>
+            <Link
+              href="/store"
+              className={`cursor-pointer hover:text-[rgb(112,66,248)] transition text-center ${
+                pathname === "/store" ? "text-white font-medium" : ""
+              }`}
+              onClick={(e) => {
+                handleNavClick(e, "/store");
+                setIsMobileMenuOpen(false);
+              }}
+            >
+              代理商店
+            </Link>
+            <Link
+              href="/mcp-store"
+              className={`cursor-pointer hover:text-[rgb(112,66,248)] transition text-center ${
+                pathname === "/mcp-store" ? "text-white font-medium" : ""
+              }`}
+              onClick={(e) => {
+                handleNavClick(e, "/mcp-store");
+                setIsMobileMenuOpen(false);
+              }}
+            >
+              MCP 商店
+              <span className="ml-1 text-xs font-semibold rounded-2xl px-1.5 py-0.5 text-blue-500 bg-[#030014]">
+                new
+              </span>
+            </Link>
+            <Link
+              href="/a2a"
+              className={`cursor-pointer hover:text-[rgb(112,66,248)] transition text-center ${
+                pathname === "/a2a" ? "text-white font-medium" : ""
+              }`}
+              onClick={(e) => {
+                handleNavClick(e, "/a2a");
+                setIsMobileMenuOpen(false);
+              }}
+            >
+              A2A
+            </Link>
+            <Link
+              href="/tools"
+              className={`cursor-pointer hover:text-[rgb(112,66,248)] transition text-center ${
+                pathname === "/tools" ? "text-white font-medium" : ""
+              }`}
+              onClick={(e) => {
+                handleNavClick(e, "/tools");
+                setIsMobileMenuOpen(false);
+              }}
+            >
+              工具
+            </Link>
+            <Link
+              href="https://github.com/0xdevpro/Athenix"
               target="_blank"
-              rel="noreferrer noopener"
               className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Source Code
+              GitHub
+            </Link>
+            <Link
+              href="https://docs.Athenix.top/"
+              target="_blank"
+              className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              文档
             </Link>
           </div>
 
-          {/* Social Icons */}
-          {/* <div className="flex justify-center gap-6 mt-6">
-            {SOCIALS.map(({ link, name, icon: Icon }) => (
-              <Link href={link} target="_blank" rel="noreferrer noopener" key={name}>
-                <Icon className="h-8 w-8 text-white" />
-              </Link>
-            ))}
-          </div> */}
+          {/* 移动端也添加钱包连接按钮 */}
+          <div className="mt-6">
+            <WalletConnectButton />
+          </div>
         </div>
       )}
     </div>

@@ -68,8 +68,8 @@ const FeatureSection = () => {
           <div className="md:order-2">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">模型上下文协议</h2>
             <p className="text-gray-300 text-lg mb-6">
-              DeepCore 完全集成了 MCP 协议。任何标准的 MCP 服务器在集成后都可以转换为供代理调用的工具。代理也可以发布为
-              MCP 服务器，允许像 Cursor 和 Claude 这样的外部客户端调用它们。此外，DeepCore 构建了自己的 MCP
+              Athenix 完全集成了 MCP 协议。任何标准的 MCP 服务器在集成后都可以转换为供代理调用的工具。代理也可以发布为
+              MCP 服务器，允许像 Cursor 和 Claude 这样的外部客户端调用它们。此外，Athenix 构建了自己的 MCP
               Store，以实现在加密领域内所有 MCP 服务器的注册、发现和调用。
             </p>
           </div>

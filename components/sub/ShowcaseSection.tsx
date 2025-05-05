@@ -27,18 +27,18 @@ const agentsData: AgentData[] = [
       "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=shubham-dhage-R1Ku62Z7zqE-unsplash.jpg",
     description:
       "该代理专注于Web3领域加密货币代币的深度分析。通过提供代币地址或名称，它可以在多个区块链（包括Solana、Ethereum、BNB、Base、TON和SUI）上执行全面的数据聚合和分析，生成有价值的市场洞察。此外，该代理还会从X平台获取热门帖子，帮助用户了解市场趋势和投资机会。",
-    twitterLink: "http://www.x.com/DeepCore_io",
-    telegramLink: "https://t.me/DeepCoreAI_io",
+    twitterLink: "http://www.x.com/Athenix_io",
+    telegramLink: "https://t.me/AthenixAI_io",
   },
   {
     id: 2,
     title: "加密交易员",
     date: "2025-01-24",
-    image: "https://deepcore.top/logos/profiles/023.png",
+    image: "https://DeepCore.top/logos/profiles/023.png",
     description:
       "加密交易员简化了Web3代币交易，在Solana链上提供代币买入、卖出、限价买单、限价卖单、止损限价单和限价单查询服务。",
-    twitterLink: "http://www.x.com/DeepCore_io",
-    telegramLink: "https://t.me/DeepCoreAI_io",
+    twitterLink: "http://www.x.com/Athenix_io",
+    telegramLink: "https://t.me/AthenixAI_io",
   },
   {
     id: 3,
@@ -48,7 +48,7 @@ const agentsData: AgentData[] = [
       "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=shubham-dhage-t0Bv0OBQuTg-unsplash.jpg",
     description:
       "加密搜索扫描网络上的最新数据——X、谷歌、YouTube、Web3媒体和社区——通过人工智能分析为Web3专业人士提供精准见解。",
-    twitterLink: "http://www.x.com/DeepCore_io",
+    twitterLink: "http://www.x.com/Athenix_io",
     telegramLink: "https://t.me/CryptoSearchV1Bot",
   },
   {
@@ -57,8 +57,8 @@ const agentsData: AgentData[] = [
     date: "2025-01-22",
     image: "/home/astor.png",
     description: "该代理协助管理在线社区，自动回复常见问题，监控讨论，并向版主报告重要活动，提升社区参与度和管理效率。",
-    twitterLink: "http://www.x.com/DeepCore_io",
-    telegramLink: "https://t.me/DeepCoreAI_io",
+    twitterLink: "http://www.x.com/Athenix_io",
+    telegramLink: "https://t.me/AthenixAI_io",
   },
 ];
 
