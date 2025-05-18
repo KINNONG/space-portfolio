@@ -66,7 +66,7 @@ export function WalletConnectButton() {
         }
       `}</style>
 
-      <WalletMultiButton>{mounted && (connected ? "已连接钱包" : "连接钱包")}</WalletMultiButton>
+      <WalletMultiButton>{mounted && (connected ? "Wallet Connected" : "Connect Wallet")}</WalletMultiButton>
     </>
   );
 }

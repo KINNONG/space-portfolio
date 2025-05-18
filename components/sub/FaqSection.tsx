@@ -12,33 +12,33 @@ interface FaqItem {
 const faqData: FaqItem[] = [
   {
     id: "item-1",
-    question: "Athenix 的宏伟愿景及其实现方式是什么？",
+    question: "What is Athenix's grand vision and how is it being implemented?",
     answer:
-      "为了构建 Web3 AI 代理的未来，Athenix 正在从“AI + 链”进化到“AI-as-Chain”，基于 MCP 协议建立首个下一代 Web3 AI 代理的全栈生态系统。我们致力于重新定义 Web3 AI 代理的基础范式，并开发下一代技术，以支持可组合智能代理在创作、分发和利用方面的创新。这一愿景通过坚实的专业技术基础得以实现——完全整合 MCP 协议，确保 AI 代理的互操作性——以及一个强大的生态系统策略，培养去中心化、开源社区，以推动创新和采用。",
+      "To build the future of Web3 AI agents, Athenix is evolving from 'AI + Chain' to 'AI-as-Chain', establishing the first full-stack ecosystem for next-gen Web3 AI agents based on the MCP protocol. We are committed to redefining the foundational paradigm of Web3 AI agents and developing next-generation technologies to support innovation in the creation, distribution, and utilization of composable intelligent agents. This vision is realized through a solid technical foundation—fully integrating the MCP protocol to ensure AI agent interoperability—and a robust ecosystem strategy that nurtures a decentralized, open-source community to drive innovation and adoption.",
   },
   {
     id: "item-2",
-    question: "为什么 Athenix 是下一代 Web3 AI 代理架构的领导者？",
+    question: "Why is Athenix the leader in next-generation Web3 AI agent architecture?",
     answer:
-      "Athenix 因其创新性的 MCP 协议集成而领先，使 AI 代理能够实现无缝互操作性和可组合性。我们的全栈生态系统提供全面的工具，用于开发、部署和管理，培养一个协作的开源社区。",
+      "Athenix leads through its innovative MCP protocol integration, enabling AI agents to achieve seamless interoperability and composability. Our full-stack ecosystem provides comprehensive tools for development, deployment, and management, fostering a collaborative open-source community.",
   },
   {
     id: "item-3",
-    question: "目标受众：如何加速生态系统采用？",
+    question: "Target Audience: How to accelerate ecosystem adoption?",
     answer:
-      "我们针对开发 AI 代理的开发者、整合 AI 解决方案的企业和寻求强大 Web3 工具的终端用户。加速策略包括开发者资助、战略合作伙伴关系、社区建设以及展示 Athenix 价值的资源。",
+      "We target developers creating AI agents, businesses integrating AI solutions, and end-users seeking powerful Web3 tools. Acceleration strategies include developer grants, strategic partnerships, community building, and resources showcasing Athenix's value.",
   },
   {
     id: "item-4",
-    question: "为什么选择 MCP 作为 Athenix 的核心开发框架？",
+    question: "Why was MCP chosen as the core development framework for Athenix?",
     answer:
-      "MCP (Model Context Protocol) 因其标准化能力而受到选择，允许多样化的 AI 模型和代理有效沟通和协作。它简化了集成，增强了可扩展性，并确保在快速发展的 AI 领域中保持未来性。",
+      "MCP (Model Context Protocol) was chosen for its standardization capabilities, allowing diverse AI models and agents to communicate and collaborate effectively. It simplifies integration, enhances scalability, and ensures future-proofing in the rapidly evolving AI landscape.",
   },
   {
     id: "item-5",
-    question: "用例：开发者和用户如何受益？",
+    question: "Use Cases: How do developers and users benefit?",
     answer:
-      "开发人员可以在 Athenix 市场上创建和货币化复杂的 AI 代理。用户受益于对一系列专门用于 DeFi 分析、NFT 交易、去中心化治理参与和个性化 Web3 体验的 AI 工具的访问，从而提高效率和决策能力。",
+      "Developers can create and monetize sophisticated AI agents on the Athenix marketplace. Users benefit from access to a range of AI tools specialized for DeFi analysis, NFT trading, decentralized governance participation, and personalized Web3 experiences, improving efficiency and decision-making capabilities.",
   },
 ];
 
@@ -73,7 +73,7 @@ const FaqSection = () => {
           viewport={{ once: true, amount: 0.2 }}
           variants={titleVariants}
         >
-          <h2 className="text-3xl md:text-4xl font-bold">常见问题</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Frequently Asked Questions</h2>
         </motion.div>
         <motion.div
           initial="hidden"

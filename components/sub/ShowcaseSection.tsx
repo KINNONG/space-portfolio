@@ -21,42 +21,43 @@ interface AgentData {
 const agentsData: AgentData[] = [
   {
     id: 1,
-    title: "加密分析师",
+    title: "Crypto Analyst",
     date: "2025-01-25",
     image:
       "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=shubham-dhage-R1Ku62Z7zqE-unsplash.jpg",
     description:
-      "该代理专注于Web3领域加密货币代币的深度分析。通过提供代币地址或名称，它可以在多个区块链（包括Solana、Ethereum、BNB、Base、TON和SUI）上执行全面的数据聚合和分析，生成有价值的市场洞察。此外，该代理还会从X平台获取热门帖子，帮助用户了解市场趋势和投资机会。",
+      "This agent focuses on in-depth analysis of cryptocurrency tokens in the Web3 space. By providing a token address or name, it can perform comprehensive data aggregation and analysis across multiple blockchains (including Solana, Ethereum, BNB, Base, TON, and SUI), generating valuable market insights. Additionally, the agent retrieves trending posts from the X platform, helping users understand market trends and investment opportunities.",
     twitterLink: "http://www.x.com/Athenix_io",
     telegramLink: "https://t.me/AthenixAI_io",
   },
   {
     id: 2,
-    title: "加密交易员",
+    title: "Crypto Trader",
     date: "2025-01-24",
     image: "https://DeepCore.top/logos/profiles/023.png",
     description:
-      "加密交易员简化了Web3代币交易，在Solana链上提供代币买入、卖出、限价买单、限价卖单、止损限价单和限价单查询服务。",
+      "Crypto Trader simplifies Web3 token trading, offering services for token buying, selling, limit buy orders, limit sell orders, stop-limit orders, and limit order queries on the Solana blockchain.",
     twitterLink: "http://www.x.com/Athenix_io",
     telegramLink: "https://t.me/AthenixAI_io",
   },
   {
     id: 3,
-    title: "加密搜索",
+    title: "Crypto Search",
     date: "2025-01-23",
     image:
       "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=shubham-dhage-t0Bv0OBQuTg-unsplash.jpg",
     description:
-      "加密搜索扫描网络上的最新数据——X、谷歌、YouTube、Web3媒体和社区——通过人工智能分析为Web3专业人士提供精准见解。",
+      "Crypto Search scans the latest data across the web—X, Google, YouTube, Web3 media, and communities—providing precise insights for Web3 professionals through AI analysis.",
     twitterLink: "http://www.x.com/Athenix_io",
     telegramLink: "https://t.me/CryptoSearchV1Bot",
   },
   {
     id: 4,
-    title: "社区管理员",
+    title: "Community Manager",
     date: "2025-01-22",
     image: "/home/astor.png",
-    description: "该代理协助管理在线社区，自动回复常见问题，监控讨论，并向版主报告重要活动，提升社区参与度和管理效率。",
+    description:
+      "This agent assists in managing online communities, automatically responds to common questions, monitors discussions, and reports important activities to moderators, enhancing community engagement and management efficiency.",
     twitterLink: "http://www.x.com/Athenix_io",
     telegramLink: "https://t.me/AthenixAI_io",
   },
@@ -213,8 +214,10 @@ const ShowcaseSection = () => {
           viewport={{ once: true, amount: 0.1 }}
           variants={titleVariants}
         >
-          <h2 className="text-3xl text-white md:text-4xl font-bold mb-6">代理案例</h2>
-          <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">体验Web3中最有价值的AI代理</p>
+          <h2 className="text-3xl text-white md:text-4xl font-bold mb-6">Agent Examples</h2>
+          <p className="text-lg text-gray-400 mb-12 max-w-3xl mx-auto">
+            Experience the most valuable AI agents in Web3
+          </p>
         </motion.div>
 
         <motion.div

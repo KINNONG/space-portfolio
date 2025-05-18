@@ -31,7 +31,7 @@ export const InfoCard: React.FC<InfoCardProps> = ({
           )}
           <div className="flex-grow">
             <h3 className="text-lg font-semibold mb-1 text-white">{title}</h3>
-            {author && <p className="text-sm text-muted-foreground mb-2">由 {author} 提供</p>}
+            {author && <p className="text-sm text-muted-foreground mb-2">Provided by {author}</p>}
             <p className="text-sm text-gray-300">{description}</p>
           </div>
         </div>

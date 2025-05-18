@@ -22,7 +22,7 @@ export const Navbar = () => {
     // 如果是受保护路由且钱包未连接
     if (PROTECTED_ROUTES.includes(path) && !connected) {
       e.preventDefault(); // 阻止默认行为
-      showAlert("请先连接钱包，再访问此页面", "info", 3000);
+      showAlert("Please connect your wallet first to access this page", "info", 3000);
     }
   };
 
@@ -92,7 +92,7 @@ export const Navbar = () => {
             }`}
             onClick={(e) => handleNavClick(e, "/workspace")}
           >
-            工作台
+            Workspace
           </Link>
           <Link
             href="/store"
@@ -103,7 +103,7 @@ export const Navbar = () => {
             }`}
             onClick={(e) => handleNavClick(e, "/store")}
           >
-            代理商店
+            Agent Store
           </Link>
           <Link
             href="/mcp-store"
@@ -114,7 +114,7 @@ export const Navbar = () => {
             }`}
             onClick={(e) => handleNavClick(e, "/mcp-store")}
           >
-            MCP 商店
+            MCP Store
             <span className="absolute -top-0 -right-10  text-xs font-semibold rounded-2xl px-1.5 py-0.5 text-blue-500 bg-[#030014]">
               new
             </span>
@@ -139,7 +139,7 @@ export const Navbar = () => {
             }`}
             onClick={(e) => handleNavClick(e, "/tools")}
           >
-            工具
+            Tools
           </Link>
           <Link
             href="https://github.com/0xdevpro/Athenix"
@@ -153,7 +153,7 @@ export const Navbar = () => {
             target="_blank"
             className="text-sm text-gray-300 hover:text-white transition-colors"
           >
-            文档
+            Docs
           </Link>
         </nav>
 
@@ -194,7 +194,7 @@ export const Navbar = () => {
                 setIsMobileMenuOpen(false);
               }}
             >
-              工作台
+              Workspace
             </Link>
             <Link
               href="/store"
@@ -206,7 +206,7 @@ export const Navbar = () => {
                 setIsMobileMenuOpen(false);
               }}
             >
-              代理商店
+              Agent Store
             </Link>
             <Link
               href="/mcp-store"
@@ -218,7 +218,7 @@ export const Navbar = () => {
                 setIsMobileMenuOpen(false);
               }}
             >
-              MCP 商店
+              MCP Store
               <span className="ml-1 text-xs font-semibold rounded-2xl px-1.5 py-0.5 text-blue-500 bg-[#030014]">
                 new
               </span>
@@ -245,7 +245,7 @@ export const Navbar = () => {
                 setIsMobileMenuOpen(false);
               }}
             >
-              工具
+              Tools
             </Link>
             <Link
               href="https://github.com/0xdevpro/Athenix"
@@ -261,7 +261,7 @@ export const Navbar = () => {
               className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              文档
+              Docs
             </Link>
           </div>
 

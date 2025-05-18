@@ -10,11 +10,11 @@ const GlobalFooter = () => {
           </div>
 
           <div className="flex space-x-6">
-            <Link href="/terms-of-service" className="text-gray-400 hover:text-primary transition-colors">
-              服务条款
+            <Link href="/terms" className="text-sm text-gray-400 hover:text-white transition-colors">
+              Terms of Service
             </Link>
-            <Link href="/privacy-policy" className="text-gray-400 hover:text-primary transition-colors">
-              隐私政策
+            <Link href="/privacy" className="text-sm text-gray-400 hover:text-white transition-colors">
+              Privacy Policy
             </Link>
             <Link
               href="https://github.com/0xdevpro/Athenix"

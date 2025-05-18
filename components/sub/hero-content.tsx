@@ -21,7 +21,7 @@ export const HeroContent = () => {
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
             {/* Fullstack Developer Portfolio */}
-            一起感受 AI Agents 的魔力
+            Experience the Magic of AI Agents Together
           </h1>
         </motion.div>
 
@@ -31,13 +31,13 @@ export const HeroContent = () => {
         >
           <div>
             <h1 className="text-transparent text-3xl md:text-5xl font-bold lg:text-7xl bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              最佳
+              Best
             </h1>
             <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Web3 AI 代理平台
+              Web3 AI Agent Platform
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-                MCP-驱动
+                MCP-Powered
               </span>
             </h1>
           </div>
@@ -49,7 +49,7 @@ export const HeroContent = () => {
         >
           {/* I&apos;m a Full Stack Software Engineer with experience in Website, Mobile, and Software development. Check
           out my projects and skills. */}
-          重塑 Web3 AI 代理基础设施，构建可组合的 AI 代理新时代。
+          Reshaping Web3 AI Agent Infrastructure, Building a New Era of Composable AI Agents.
         </motion.p>
 
         <motion.a
@@ -57,7 +57,7 @@ export const HeroContent = () => {
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
           {/* Learn more */}
-          开始使用
+          Get Started
         </motion.a>
       </div>
 

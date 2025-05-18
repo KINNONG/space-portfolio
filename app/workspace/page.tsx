@@ -10,14 +10,17 @@ export default function WorkspacePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              您的 AI 智能{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">工作台</span>
+              Your AI Agent{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                Workspace
+              </span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              在一个强大的工作台中构建、管理和定制您的AI智能体。获取所有工具和资源，为Web3创建智能代理。
+              Build, manage, and customize your AI agents in a powerful workspace. Get all the tools and resources to
+              create intelligent agents for Web3.
             </p>
             <Button className="bg-gray-900 border border-blue-800 hover:bg-gray-800 hover:border-blue-600 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] text-white font-medium transition-all duration-300">
-              创建新代理
+              Create New Agent
             </Button>
           </div>
         </div>
@@ -29,21 +32,21 @@ export default function WorkspacePage() {
           {/* Analytics Card */}
           <Card className="bg-[rgba(15,12,41,0.7)] shadow-lg border border-[#2A0E61] hover:shadow-[#2A0E61]/40 transition-all">
             <CardHeader>
-              <CardTitle className="text-xl">数据分析</CardTitle>
-              <CardDescription>代理性能指标</CardDescription>
+              <CardTitle className="text-xl">Data Analytics</CardTitle>
+              <CardDescription>Agent Performance Metrics</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div>
-                  <p className="text-sm text-muted-foreground mb-1">活跃代理</p>
+                  <p className="text-sm text-muted-foreground mb-1">Active Agents</p>
                   <p className="text-2xl font-bold">7</p>
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground mb-1">总交互次数</p>
+                  <p className="text-sm text-muted-foreground mb-1">Total Interactions</p>
                   <p className="text-2xl font-bold">12,587</p>
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground mb-1">成功率</p>
+                  <p className="text-sm text-muted-foreground mb-1">Success Rate</p>
                   <p className="text-2xl font-bold">94.3%</p>
                 </div>
               </div>
@@ -53,25 +56,25 @@ export default function WorkspacePage() {
           {/* Recent Activity Card */}
           <Card className="bg-[rgba(15,12,41,0.7)] shadow-lg border border-[#2A0E61] hover:shadow-[#2A0E61]/40 transition-all">
             <CardHeader>
-              <CardTitle className="text-xl">最近活动</CardTitle>
-              <CardDescription>最新代理交互</CardDescription>
+              <CardTitle className="text-xl">Recent Activity</CardTitle>
+              <CardDescription>Latest Agent Interactions</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="border-b border-[#2A0E61]/50 pb-3">
-                  <p className="text-sm text-primary">加密分析师</p>
-                  <p className="text-xs text-muted-foreground">代币分析完成</p>
-                  <p className="text-xs text-gray-500 mt-1">3分钟前</p>
+                  <p className="text-sm text-primary">Crypto Analyst</p>
+                  <p className="text-xs text-muted-foreground">Token analysis complete</p>
+                  <p className="text-xs text-gray-500 mt-1">3 minutes ago</p>
                 </div>
                 <div className="border-b border-[#2A0E61]/50 pb-3">
-                  <p className="text-sm text-primary">交易机器人</p>
-                  <p className="text-xs text-muted-foreground">交易成功执行</p>
-                  <p className="text-xs text-gray-500 mt-1">37分钟前</p>
+                  <p className="text-sm text-primary">Trading Bot</p>
+                  <p className="text-xs text-muted-foreground">Trade successfully executed</p>
+                  <p className="text-xs text-gray-500 mt-1">37 minutes ago</p>
                 </div>
                 <div>
-                  <p className="text-sm text-primary">研究助手</p>
-                  <p className="text-xs text-muted-foreground">研究报告已生成</p>
-                  <p className="text-xs text-gray-500 mt-1">1小时前</p>
+                  <p className="text-sm text-primary">Research Assistant</p>
+                  <p className="text-xs text-muted-foreground">Research report generated</p>
+                  <p className="text-xs text-gray-500 mt-1">1 hour ago</p>
                 </div>
               </div>
             </CardContent>
@@ -80,8 +83,8 @@ export default function WorkspacePage() {
           {/* Resources Card */}
           <Card className="bg-[rgba(15,12,41,0.7)] shadow-lg border border-[#2A0E61] hover:shadow-[#2A0E61]/40 transition-all">
             <CardHeader>
-              <CardTitle className="text-xl">资源</CardTitle>
-              <CardDescription>工具与服务</CardDescription>
+              <CardTitle className="text-xl">Resources</CardTitle>
+              <CardDescription>Tools and Services</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
@@ -105,8 +108,8 @@ export default function WorkspacePage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm">模型中心</p>
-                    <p className="text-xs text-muted-foreground">12个可用模型</p>
+                    <p className="text-sm">Model Center</p>
+                    <p className="text-xs text-muted-foreground">12 available models</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -131,8 +134,8 @@ export default function WorkspacePage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm">API 连接</p>
-                    <p className="text-xs text-muted-foreground">8个活跃连接</p>
+                    <p className="text-sm">API Connections</p>
+                    <p className="text-xs text-muted-foreground">8 active connections</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
@@ -153,8 +156,8 @@ export default function WorkspacePage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm">安全</p>
-                    <p className="text-xs text-muted-foreground">端到端加密</p>
+                    <p className="text-sm">Security</p>
+                    <p className="text-xs text-muted-foreground">End-to-end encryption</p>
                   </div>
                 </div>
               </div>
@@ -165,9 +168,9 @@ export default function WorkspacePage() {
         {/* My Agents Section */}
         <div className="mb-10">
           <div className="flex justify-between items-center mb-6">
-            <h2 className="text-2xl font-bold">我的代理</h2>
+            <h2 className="text-2xl font-bold">My Agents</h2>
             <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
-              查看全部
+              View All
             </Button>
           </div>
 
@@ -179,18 +182,19 @@ export default function WorkspacePage() {
               >
                 <CardHeader className="pb-3">
                   <div className="flex justify-between items-start">
-                    <CardTitle className="text-lg">加密分析师 {i}</CardTitle>
-                    <div className="px-2 py-1 text-xs bg-green-900/30 text-green-400 rounded-full">活跃</div>
+                    <CardTitle className="text-lg">Crypto Analyst {i}</CardTitle>
+                    <div className="px-2 py-1 text-xs bg-green-900/30 text-green-400 rounded-full">Active</div>
                   </div>
-                  <CardDescription className="text-xs">创建于 2025年5月{i}日</CardDescription>
+                  <CardDescription className="text-xs">Created on May {i}, 2025</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">
-                    专门分析多个区块链上的加密货币代币，提供深度市场洞察。
+                    Specializes in analyzing cryptocurrency tokens across multiple blockchains, providing in-depth
+                    market insights.
                   </p>
                   <div className="flex justify-between text-xs text-muted-foreground">
-                    <span>交互次数: {i * 1245}</span>
-                    <span>成功率: {90 + i}%</span>
+                    <span>Interactions: {i * 1245}</span>
+                    <span>Success Rate: {90 + i}%</span>
                   </div>
                 </CardContent>
               </Card>
@@ -200,9 +204,9 @@ export default function WorkspacePage() {
 
         {/* Quick Actions */}
         <div>
-          <h2 className="text-2xl font-bold mb-6">快捷操作</h2>
+          <h2 className="text-2xl font-bold mb-6">Quick Actions</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-            {["创建代理", "连接API", "导入模型", "查看文档"].map((action, i) => (
+            {["Create Agent", "Connect API", "Import Model", "View Documentation"].map((action, i) => (
               <Card
                 key={i}
                 className="bg-[rgba(15,12,41,0.7)] shadow-lg border border-[#2A0E61] hover:border-[#4A1E9E] hover:shadow-[#2A0E61]/40 transition-all cursor-pointer"

@@ -6,10 +6,11 @@ const WorkflowSection: React.FC = () => {
   return (
     <>
       <div className="text-center px-4">
-        <div className="mx-auto mb-8 max-w-full h-auto">{/* 星空背景装饰 */}</div>
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">工作流</h2>
+        <div className="mx-auto mb-8 max-w-full h-auto">{/* Starry background decoration */}</div>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">Workflow</h2>
         <p className="text-gray-400 max-w-2xl mx-auto">
-          系统的四个核心组件如何协同工作，实现从数据分析到交易执行的无缝流程
+          How the four core components of the system work together to achieve a seamless process from data analysis to
+          trade execution
         </p>
       </div>
 
@@ -80,7 +81,7 @@ const WorkflowSection: React.FC = () => {
             {/* 顶部标题 - 对齐内容 */}
             <div className="md:col-span-3 text-center mb-8">
               <div className="inline-block px-4 py-1 bg-gradient-to-r from-blue-900/40 to-blue-700/20 rounded-full border border-blue-500/30">
-                <span className="text-sm text-blue-200">输入数据 → 处理 → 输出结果</span>
+                <span className="text-sm text-blue-200">Input Data → Processing → Output Results</span>
               </div>
             </div>
 
@@ -106,17 +107,18 @@ const WorkflowSection: React.FC = () => {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <h3 className="text-base font-medium text-white truncate">分析师</h3>
+                        <h3 className="text-base font-medium text-white truncate">Analyst</h3>
                       </div>
                       <p className="text-xs text-blue-200/70 mt-1 line-clamp-2 overflow-hidden text-ellipsis">
-                        多维度分析链上和链下数据，为交易者提供精准的项目评估。
+                        Multi-dimensional analysis of on-chain and off-chain data, providing precise project evaluations
+                        for traders.
                       </p>
                     </div>
                   </div>
                   <div className="bg-blue-900/20 rounded-lg p-3 mb-4 border border-blue-500/10">
                     <div className="flex justify-between text-xs mb-1">
-                      <span className="text-blue-200/70">代币合约地址</span>
-                      <span className="text-blue-200/70">代币价值</span>
+                      <span className="text-blue-200/70">Token Contract</span>
+                      <span className="text-blue-200/70">Token Value</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-white truncate max-w-[150px]">DEzkpE...7LZ9Pr6hBz</span>
@@ -124,15 +126,15 @@ const WorkflowSection: React.FC = () => {
                     </div>
                   </div>
                   <div className="space-y-2 mb-4">
-                    <h4 className="text-xs font-medium text-white">功能</h4>
+                    <h4 className="text-xs font-medium text-white">Functions</h4>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center bg-blue-900/20 rounded-lg px-4 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">链上API</span>
-                        <span className="text-xs text-blue-200/70">RPC节点</span>
+                        <span className="text-xs text-white">On-chain API</span>
+                        <span className="text-xs text-blue-200/70">RPC Node</span>
                       </div>
                       <div className="flex justify-between items-center bg-blue-900/20 rounded-lg px-4 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">Twitter代理</span>
-                        <span className="text-xs text-blue-200/70">内置</span>
+                        <span className="text-xs text-white">Twitter Agent</span>
+                        <span className="text-xs text-blue-200/70">Built-in</span>
                       </div>
                     </div>
                   </div>
@@ -162,20 +164,21 @@ const WorkflowSection: React.FC = () => {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <h3 className="text-base font-medium text-white truncate">Twitter知识图谱</h3>
+                        <h3 className="text-base font-medium text-white truncate">Twitter Knowledge Graph</h3>
                         <span className="px-2 py-0.5 text-xs rounded-full bg-blue-500/10 text-blue-400 flex-shrink-0 whitespace-nowrap">
-                          官方
+                          Official
                         </span>
                       </div>
                       <p className="text-xs text-blue-200/70 mt-1 line-clamp-2 overflow-hidden text-ellipsis">
-                        通过识别和关联与WEB3 KOL相关的推文、用户和标签，揭示隐藏的关系网络。
+                        Revealing hidden relationship networks by identifying and associating tweets, users, and tags
+                        related to WEB3 KOLs.
                       </p>
                     </div>
                   </div>
                   <div className="bg-blue-900/20 rounded-lg p-3 mb-4 border border-blue-500/10">
                     <div className="flex justify-between text-xs mb-1">
-                      <span className="text-blue-200/70">代币合约地址</span>
-                      <span className="text-blue-200/70">代币价值</span>
+                      <span className="text-blue-200/70">Token Contract</span>
+                      <span className="text-blue-200/70">Token Value</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-white truncate max-w-[150px]">D9vpE...7LZPwDCDZ</span>
@@ -183,19 +186,19 @@ const WorkflowSection: React.FC = () => {
                     </div>
                   </div>
                   <div className="space-y-2">
-                    <h4 className="text-xs font-medium text-blue-200/70">数据处理</h4>
+                    <h4 className="text-xs font-medium text-blue-200/70">Data Processing</h4>
                     <div className="grid grid-cols-2 gap-2">
                       <div className="bg-blue-900/20 rounded-lg px-3 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">模型定义</span>
+                        <span className="text-xs text-white">Model Definition</span>
                       </div>
                       <div className="bg-blue-900/20 rounded-lg px-3 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">图谱提取</span>
+                        <span className="text-xs text-white">Graph Extraction</span>
                       </div>
                       <div className="bg-blue-900/20 rounded-lg px-3 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">图谱融合</span>
+                        <span className="text-xs text-white">Graph Fusion</span>
                       </div>
                       <div className="bg-blue-900/20 rounded-lg px-3 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">图谱数据库</span>
+                        <span className="text-xs text-white">Graph Database</span>
                       </div>
                     </div>
                   </div>
@@ -209,10 +212,10 @@ const WorkflowSection: React.FC = () => {
                 <div className="w-full h-full bg-gradient-to-b from-blue-900/60 to-blue-800/20 backdrop-blur rounded-lg border-2 border-blue-400 p-6 shadow-[0_0_30px_rgba(56,182,255,0.35)]">
                   <div className="text-center mb-3">
                     <span className="inline-block bg-blue-500/20 text-blue-300 text-xs px-3 py-1 rounded-full border border-blue-400/30">
-                      中央处理
+                      Central Processing
                     </span>
                   </div>
-                  <h3 className="text-lg font-medium text-white text-center mb-4">模型中心</h3>
+                  <h3 className="text-lg font-medium text-white text-center mb-4">Model Center</h3>
                   <div className="grid grid-cols-2 gap-3 mb-3">
                     <div className="bg-blue-900/30 rounded-lg px-3 py-2 border border-blue-500/20">
                       <span className="text-xs text-white">DeepSeek R1</span>
@@ -231,7 +234,7 @@ const WorkflowSection: React.FC = () => {
                   <div className="text-center">
                     <span className="inline-block bg-blue-900/40 text-blue-200 text-xs px-3 py-1 rounded-full border border-blue-400/20">
                       <span className="inline-block mr-1">⟳</span>
-                      数据处理与模型调用
+                      Data Processing and Model Call
                     </span>
                   </div>
                 </div>
@@ -263,17 +266,18 @@ const WorkflowSection: React.FC = () => {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <h3 className="text-base font-medium text-white truncate">交易代理</h3>
+                        <h3 className="text-base font-medium text-white truncate">Trading Agent</h3>
                       </div>
                       <p className="text-xs text-blue-200/70 mt-1 line-clamp-2 overflow-hidden text-ellipsis">
-                        Web3 交易代理作为一个智能中介，在去中心化网络中促进无缝交易。
+                        Web3 trading agent as a smart intermediary, promoting seamless transactions in the decentralized
+                        network.
                       </p>
                     </div>
                   </div>
                   <div className="bg-blue-900/20 rounded-lg p-3 mb-4 border border-blue-500/10">
                     <div className="flex justify-between text-xs mb-1">
-                      <span className="text-blue-200/70">代币合约地址</span>
-                      <span className="text-blue-200/70">代币价值</span>
+                      <span className="text-blue-200/70">Token Contract</span>
+                      <span className="text-blue-200/70">Token Value</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-white truncate max-w-[150px]">79vpE...7LZ9PASDAS</span>
@@ -281,15 +285,15 @@ const WorkflowSection: React.FC = () => {
                     </div>
                   </div>
                   <div className="space-y-2 mb-4">
-                    <h4 className="text-xs font-medium text-white">功能</h4>
+                    <h4 className="text-xs font-medium text-white">Functions</h4>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center bg-blue-900/20 rounded-lg px-4 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">报价&amp;兑换API</span>
+                        <span className="text-xs text-white">Quote &amp; Swap API</span>
                         <span className="text-xs text-blue-200/70">Jupiter</span>
                       </div>
                       <div className="flex justify-between items-center bg-blue-900/20 rounded-lg px-4 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">分析师代理</span>
-                        <span className="text-xs text-blue-200/70">内置</span>
+                        <span className="text-xs text-white">Analyst Agent</span>
+                        <span className="text-xs text-blue-200/70">Built-in</span>
                       </div>
                     </div>
                   </div>
@@ -312,17 +316,18 @@ const WorkflowSection: React.FC = () => {
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2">
-                        <h3 className="text-base font-medium text-white truncate">用户管理</h3>
+                        <h3 className="text-base font-medium text-white truncate">User Management</h3>
                       </div>
                       <p className="text-xs text-blue-200/70 mt-1 line-clamp-2 overflow-hidden text-ellipsis">
-                        管理用户访问权限、API请求和订阅状态，确保系统安全和稳定运行。
+                        Managing user access permissions, API requests, and subscription status to ensure system
+                        security and stable operation.
                       </p>
                     </div>
                   </div>
                   <div className="bg-blue-900/20 rounded-lg p-3 mb-4 border border-blue-500/10">
                     <div className="flex justify-between text-xs mb-1">
-                      <span className="text-blue-200/70">平均响应时间</span>
-                      <span className="text-blue-200/70">每日请求</span>
+                      <span className="text-blue-200/70">Average Response Time</span>
+                      <span className="text-blue-200/70">Daily Requests</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-white truncate max-w-[150px]">200ms</span>
@@ -330,15 +335,15 @@ const WorkflowSection: React.FC = () => {
                     </div>
                   </div>
                   <div className="space-y-2 mb-4">
-                    <h4 className="text-xs font-medium text-white">功能</h4>
+                    <h4 className="text-xs font-medium text-white">Functions</h4>
                     <div className="space-y-2">
                       <div className="flex justify-between items-center bg-blue-900/20 rounded-lg px-4 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">负载均衡</span>
-                        <span className="text-xs text-blue-200/70">自动扩展</span>
+                        <span className="text-xs text-white">Load Balancing</span>
+                        <span className="text-xs text-blue-200/70">Automatic Expansion</span>
                       </div>
                       <div className="flex justify-between items-center bg-blue-900/20 rounded-lg px-4 py-2 border border-blue-500/10">
-                        <span className="text-xs text-white">用户验证</span>
-                        <span className="text-xs text-blue-200/70">多重认证</span>
+                        <span className="text-xs text-white">User Verification</span>
+                        <span className="text-xs text-blue-200/70">Multi-factor Authentication</span>
                       </div>
                     </div>
                   </div>
@@ -353,7 +358,7 @@ const WorkflowSection: React.FC = () => {
           <div className="flex flex-col items-center md:hidden">
             <div className="h-12 w-0.5 bg-gradient-to-b from-transparent to-blue-500/40"></div>
             <div className="my-4 px-3 py-1 rounded-full bg-blue-900/30 border border-blue-500/30 text-xs text-blue-300 shadow-[0_0_10px_rgba(56,182,255,0.2)]">
-              数据流向
+              Data Flow
             </div>
             <div className="h-12 w-0.5 bg-gradient-to-t from-transparent to-blue-500/40"></div>
           </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-// import Image from "next/image"; // 不再需要 Image
+
 import {
   BarChart,
   Bitcoin,
@@ -24,92 +24,92 @@ import {
 const categories = [
   {
     id: 1,
-    title: "所有代理",
-    description: "浏览所有AI代理",
-    icon: LayoutGrid, // 使用 Lucide 图标
+    title: "All Agents",
+    description: "Browse all AI agents",
+    icon: LayoutGrid, // Use Lucide icon
   },
   {
     id: 2,
-    title: "程序员",
-    description: "专业编码人员和系统架构师",
+    title: "Programmers",
+    description: "Professional coders and system architects",
     icon: Code,
   },
   {
     id: 3,
-    title: "研究员",
-    description: "AI和科学研究专家",
+    title: "Researchers",
+    description: "AI and scientific research experts",
     icon: FlaskConical,
   },
   {
     id: 4,
-    title: "分析师",
-    description: "数据和市场分析专家",
+    title: "Analysts",
+    description: "Data and market analysis experts",
     icon: BarChart,
   },
   {
     id: 5,
-    title: "网络",
-    description: "网络和基础设施专家",
+    title: "Networks",
+    description: "Network and infrastructure experts",
     icon: Network,
   },
   {
     id: 6,
-    title: "加密货币新闻",
-    description: "新闻聚合，实时信息更新",
+    title: "Crypto News",
+    description: "News aggregation, real-time information updates",
     icon: Bitcoin,
   },
   {
     id: 7,
     title: "Twitter",
-    description: "社区管理，增强用户互动",
+    description: "Community management, enhanced user interaction",
     icon: Twitter,
   },
   {
     id: 8,
-    title: "图形设计",
-    description: "图形生成，创建视觉内容",
+    title: "Graphic Design",
+    description: "Graphic generation, create visual content",
     icon: Paintbrush,
   },
   {
     id: 9,
-    title: "视频",
-    description: "视频编辑，提升创作效率",
+    title: "Video",
+    description: "Video editing, improve creation efficiency",
     icon: Video,
   },
   {
     id: 10,
-    title: "市场营销",
-    description: "推广和营销策略",
+    title: "Marketing",
+    description: "Promotion and marketing strategies",
     icon: Megaphone,
   },
   {
     id: 11,
-    title: "客户支持",
-    description: "用户服务和问题解决",
+    title: "Customer Support",
+    description: "User service and problem solving",
     icon: Headphones,
   },
   {
     id: 12,
-    title: "教育",
-    description: "知识传授和在线学习",
+    title: "Education",
+    description: "Knowledge sharing and online learning",
     icon: GraduationCap,
   },
   {
     id: 13,
-    title: "金融",
-    description: "财务分析和投资咨询",
+    title: "Finance",
+    description: "Financial analysis and investment consultation",
     icon: Landmark,
   },
   {
     id: 14,
-    title: "写作",
-    description: "内容创作和文案撰写",
+    title: "Writing",
+    description: "Content creation and copywriting",
     icon: Edit,
   },
   {
     id: 15,
-    title: "音乐",
-    description: "音乐创作和音频处理",
+    title: "Music",
+    description: "Music creation and audio processing",
     icon: Music,
   },
 ];
@@ -124,8 +124,10 @@ const LogosSection = () => {
   return (
     <section className="py-20 w-full overflow-hidden">
       <div className="container mx-auto px-4 text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">代理类别</h2>
-        <p className="text-lg text-gray-400 max-w-2xl mx-auto">探索我们多样化的专业AI代理集合，满足您的特定需求</p>
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Agent Categories</h2>
+        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          Explore our diverse collection of specialized AI agents to meet your specific needs
+        </p>
       </div>
 
       <div className="categories-section w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">

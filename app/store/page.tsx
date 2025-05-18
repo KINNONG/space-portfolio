@@ -6,75 +6,92 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 const featuredAgents = [
   {
     id: "agent-1",
-    title: "加密分析师 Pro",
-    creator: "Athenix 团队",
+    title: "Crypto Analyst Pro",
+    creator: "Athenix Team",
     rating: 4.9,
     reviews: 127,
-    price: "免费",
+    price: "Free",
     image:
       "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=shubham-dhage-R1Ku62Z7zqE-unsplash.jpg",
-    description: "高级加密货币分析，支持多链。提供详细的市场洞察、代币评估和热门社交信号。",
-    tags: ["分析", "加密货币", "多链"],
+    description:
+      "Advanced cryptocurrency analysis, supporting multiple chains. Provides detailed market insights, token evaluations, and trending social signals.",
+    tags: ["Analysis", "Cryptocurrency", "Multi-chain"],
   },
   {
     id: "agent-2",
-    title: "交易机器人 Elite",
-    creator: "DeFi 实验室",
+    title: "Trading Bot Elite",
+    creator: "DeFi Lab",
     rating: 4.7,
     reviews: 89,
     price: "0.01 ETH",
     image: "https://DeepCore.top/logos/profiles/023.png",
-    description: "自动化交易代理，支持限价单、止损单，并跨 Solana、以太坊等多个 DEX。",
-    tags: ["交易", "DeFi", "自动化"],
+    description:
+      "Automated trading agent supporting limit orders, stop losses, and operating across multiple DEXs including Solana, Ethereum, and more.",
+    tags: ["Trading", "DeFi", "Automation"],
   },
   {
     id: "agent-3",
-    title: "研究 GPT",
-    creator: "Web3 研究 DAO",
+    title: "Research GPT",
+    creator: "Web3 Research DAO",
     rating: 4.8,
     reviews: 215,
-    price: "免费试用",
+    price: "Free Trial",
     image:
       "https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&q=85&fm=jpg&crop=entropy&cs=srgb&dl=shubham-dhage-t0Bv0OBQuTg-unsplash.jpg",
-    description: "强大的研究能力，扫描 Web3 媒体、项目和文档，提供全面的报告。",
-    tags: ["研究", "报告", "Web3"],
+    description:
+      "Powerful research capabilities, scanning Web3 media, projects, and documentation to provide comprehensive reports.",
+    tags: ["Research", "Reports", "Web3"],
   },
   {
     id: "agent-4",
-    title: "NFT 导航员",
+    title: "NFT Navigator",
     creator: "MetaLabs",
     rating: 4.6,
     reviews: 76,
-    price: "免费",
+    price: "Free",
     image: "https://ext.same-assets.com/3645949495/3272116947.svg",
-    description: "通过 AI 驱动的估值洞察，发现、分析和跟踪跨多个市场的 NFT 收藏品。",
-    tags: ["NFT", "市场", "分析"],
+    description:
+      "Discover, analyze, and track NFT collections across multiple marketplaces with AI-powered valuation insights.",
+    tags: ["NFT", "Markets", "Analysis"],
   },
   {
     id: "agent-5",
-    title: "治理助手",
-    creator: "DAO 实验室",
+    title: "Governance Assistant",
+    creator: "DAO Labs",
     rating: 4.5,
     reviews: 52,
     price: "0.005 ETH",
     image: "https://ext.same-assets.com/3645949495/2153026770.svg",
-    description: "跟踪和分析跨 Web3 协议的 DAO 提案、投票模式和治理活动。",
-    tags: ["DAO", "治理", "投票"],
+    description: "Track and analyze DAO proposals, voting patterns, and governance activities across Web3 protocols.",
+    tags: ["DAO", "Governance", "Voting"],
   },
   {
     id: "agent-6",
-    title: "安全哨兵",
+    title: "Security Sentinel",
     creator: "BlockGuard",
     rating: 4.9,
     reviews: 143,
     price: "0.02 ETH",
     image: "/home/astor.png",
-    description: "监控智能合约、钱包和区块链交易中的可疑活动和潜在安全威胁。",
-    tags: ["安全", "监控", "警报"],
+    description:
+      "Monitor suspicious activities and potential security threats in smart contracts, wallets, and blockchain transactions.",
+    tags: ["Security", "Monitoring", "Alerts"],
   },
 ];
 
-const categories = ["所有代理", "分析", "交易", "研究", "NFT", "治理", "安全", "社交", "新闻", "开发者", "游戏"];
+const categories = [
+  "All Agents",
+  "Analysis",
+  "Trading",
+  "Research",
+  "NFT",
+  "Governance",
+  "Security",
+  "Social",
+  "News",
+  "Developer",
+  "Gaming",
+];
 
 export default function StorePage() {
   return (
@@ -85,11 +102,14 @@ export default function StorePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              AI 代理{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">市场</span>
+              AI Agent{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+                Marketplace
+              </span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
-              发现、部署和定制由 Athenix 社区创建的强大 AI 代理。从分析到交易，为您的 Web3.0 需求找到完美的 AI 助手。
+              Discover, deploy, and customize powerful AI agents created by the Athenix community. From analysis to
+              trading, find the perfect AI assistant for your Web3 needs.
             </p>
             <div className="relative max-w-xl mx-auto">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -109,7 +129,7 @@ export default function StorePage() {
               <input
                 type="text"
                 className="bg-[rgba(15,12,41,0.7)] block w-full pl-10 pr-3 py-4 rounded-full border border-[#2A0E61] focus:outline-none focus:ring-2 focus:ring-[#4A1E9E] focus:border-transparent text-white placeholder-gray-400"
-                placeholder="搜索代理..."
+                placeholder="Search agents..."
               />
             </div>
           </div>
@@ -138,12 +158,12 @@ export default function StorePage() {
       {/* Featured Agents */}
       <section className="container mx-auto px-4 mb-16">
         <div className="flex justify-between items-center mb-6">
-          <h2 className="text-2xl font-bold">精选代理</h2>
+          <h2 className="text-2xl font-bold">Featured Agents</h2>
           <Button
             variant="outline"
             className="border-[#2A0E61] text-gray-300 hover:border-[#4A1E9E] hover:text-white transition-all"
           >
-            查看全部
+            View All
           </Button>
         </div>
 
@@ -179,7 +199,7 @@ export default function StorePage() {
                     <span className="text-xs text-muted-foreground ml-1">({agent.reviews})</span>
                   </div>
                 </div>
-                <CardDescription className="text-xs">作者：{agent.creator}</CardDescription>
+                <CardDescription className="text-xs">Creator: {agent.creator}</CardDescription>
               </CardHeader>
               <CardContent className="flex-grow">
                 <p className="text-sm text-muted-foreground mb-4 line-clamp-2 h-10">{agent.description}</p>
@@ -196,7 +216,7 @@ export default function StorePage() {
               </CardContent>
               <CardFooter className="pt-4">
                 <Button className="w-full bg-gray-900 border border-blue-800 hover:bg-gray-800 hover:border-blue-600 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] text-white font-medium transition-all duration-300">
-                  安装代理
+                  Install Agent
                 </Button>
               </CardFooter>
             </Card>
@@ -206,15 +226,15 @@ export default function StorePage() {
 
       {/* Popular Categories */}
       <section className="container mx-auto px-4 mb-16">
-        <h2 className="text-2xl font-bold mb-6">热门分类</h2>
+        <h2 className="text-2xl font-bold mb-6">Popular Categories</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {[
-            { title: "分析代理", count: 124, icon: "📊" },
-            { title: "交易机器人", count: 97, icon: "📈" },
-            { title: "研究工具", count: 86, icon: "🔍" },
-            { title: "NFT 助手", count: 73, icon: "🖼️" },
-            { title: "安全监控", count: 65, icon: "🔒" },
-            { title: "开发助手", count: 58, icon: "💻" },
+            { title: "Analysis Agents", count: 124, icon: "📊" },
+            { title: "Trading Bots", count: 97, icon: "📈" },
+            { title: "Research Tools", count: 86, icon: "🔍" },
+            { title: "NFT Assistants", count: 73, icon: "🖼️" },
+            { title: "Security Monitoring", count: 65, icon: "🔒" },
+            { title: "Development Helpers", count: 58, icon: "💻" },
           ].map((category) => (
             <Card
               key={category.title}
@@ -224,7 +244,7 @@ export default function StorePage() {
                 <div className="text-3xl mr-4">{category.icon}</div>
                 <div>
                   <h3 className="font-medium">{category.title}</h3>
-                  <p className="text-sm text-muted-foreground">{category.count} 个代理</p>
+                  <p className="text-sm text-muted-foreground">{category.count} agents</p>
                 </div>
               </CardContent>
             </Card>
@@ -238,16 +258,18 @@ export default function StorePage() {
           <CardContent className="p-8">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
               <div>
-                <h3 className="text-2xl font-bold mb-4">保持更新</h3>
-                <p className="text-muted-foreground mb-6">订阅我们的通讯，获取有关新代理、功能和 AI 进展的更新。</p>
+                <h3 className="text-2xl font-bold mb-4">Stay Updated</h3>
+                <p className="text-muted-foreground mb-6">
+                  Subscribe to our newsletter for updates on new agents, features, and AI advancements.
+                </p>
                 <div className="flex">
                   <input
                     type="email"
-                    placeholder="输入您的邮箱"
+                    placeholder="Enter your email"
                     className="flex-grow px-4 py-2 bg-[rgba(10,8,28,0.8)] border border-[#2A0E61] rounded-l-md focus:outline-none focus:ring-2 focus:ring-[#4A1E9E] focus:border-transparent text-white placeholder-gray-400"
                   />
                   <Button className="bg-gray-900 border border-blue-800 hover:bg-gray-800 hover:border-blue-600 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] text-white font-medium transition-all duration-300 rounded-l-none">
-                    订阅
+                    Subscribe
                   </Button>
                 </div>
               </div>
