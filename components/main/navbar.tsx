@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useAlert } from "@/components/AlertProvider";
 import { WalletConnectButton } from "@/components/WalletConnectButton";
 import { useWallet } from "@solana/wallet-adapter-react";
-
+import Image from "next/image";
 // 定义受保护路由
 const PROTECTED_ROUTES = ["/workspace", "/store", "/mcp-store", "/a2a", "/tools"];
 
@@ -32,10 +32,9 @@ export const Navbar = () => {
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Logo + Name */}
         <div className="flex items-center">
-          {/* <Image src="/logo.png" alt="Logo" width={70} height={70} draggable={false} className="cursor-pointer" /> */}
           <Link href="/" className="flex items-center">
             <div className="w-8 h-8 mr-2">
-              <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              {/* <svg width="32" height="32" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M15.7891 7.94824L7.94824 15.7891L7.94824 32.211L15.7891 40.0518L32.211 40.0518L40.0518 32.211L40.0518 15.7891L32.211 7.94824L15.7891 7.94824Z"
                   stroke="#D9DCBA"
@@ -50,7 +49,8 @@ export const Navbar = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
-              </svg>
+              </svg> */}
+              <Image src="/logo.png" alt="Logo" width={100} height={100} className="cursor-pointer" />
             </div>
             <span className="text-xl font-bold text-white">Athenix</span>
           </Link>
